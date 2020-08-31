@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int number = 21;
+        int number = -9;
         int lucky = 7;
-        String overTen = "10";
 
-        if(number%10==0){
+        if (number % 10 == 0) {
             System.out.println("Es handelt sich um eine runde Zahl");
-        }else if(number%2==0){
+        }
+        if (number % 2 == 0) {
             System.out.println("Es handelt sich um eine gerade Zahl");
-        }else if(number == lucky){
-            System.out.printf("Es handelt sich um deine Glückszahl %s",lucky);
-        }else if(number > 10){
+        }
+        if (number == lucky) {
+            System.out.printf("Es handelt sich um deine Glückszahl %s", lucky);
+        }
+        if (number >= 10 && number < 100 || number <= -10 && number > -100) {
             System.out.println("Es handelt sich um eine zweistellige Zahl");
-        }else{
-            System.out.printf("Es handel sich um die Zahl %s",number);
         }
 
     }
