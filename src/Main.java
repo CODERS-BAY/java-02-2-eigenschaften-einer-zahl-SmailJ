@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int number=7;
-        int lucky=7;
-        String overTen="10";
+        int number = 21;
+        int lucky = 7;
+        String overTen = "10";
 
         if(number%10==0){
             System.out.println("Es handelt sich um eine runde Zahl");
@@ -15,10 +15,9 @@ public class Main {
             System.out.println("Es handelt sich um eine gerade Zahl");
         }else if(number == lucky){
             System.out.printf("Es handelt sich um deine Glückszahl %s",lucky);
-        }else if(number = String.valueOf(overTen)){
-
-        }
-        else{
+        }else if(number > 10){
+            System.out.println("Es handelt sich um eine zweistellige Zahl");
+        }else{
             System.out.printf("Es handel sich um die Zahl %s",number);
         }
 
